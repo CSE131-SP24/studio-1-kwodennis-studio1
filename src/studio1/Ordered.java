@@ -9,12 +9,22 @@ public class Ordered {
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("Value for x?");
+		System.out.println("What is x? ");
 		int x = in.nextInt();
-		System.out.println("Value for y?");
+		System.out.println("What is y? ");
 		int y = in.nextInt();
-		System.out.println("Value for z?");
+		System.out.println("What is z? ");
 		int z = in.nextInt();
+		
+		boolean isOrdered = true; 
+				
+		isOrdered = (x < y) && (y < z) || (x > y) && (y > z);
+		System.out.println(isOrdered);
+
+		
+		
+		
+		
 
 	}
 
